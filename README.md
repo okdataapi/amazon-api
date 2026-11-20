@@ -10,10 +10,10 @@ Examples for the [okdata](https://okdata.online/?src=gh-amazon-api) Amazon API: 
 
 | Endpoint | What it returns | Price | Path |
 |---|---|---|---|
-| [Amazon product search](https://okdata.online/apis/amazon/products/search/) | Search an Amazon store by keyword, as a shopper sees the results: title, price and list price, star rating, number of ratings, units bought last month, Prime, Best Seller and Amazon's Choice badges, and the photo. | $0.006 a call | `GET /v1/amazon/products/search` |
-| [Amazon product details](https://okdata.online/apis/amazon/products/get/) | One Amazon product by ASIN: title, price and list price, rating and number of ratings, units bought last month, all photos, brand, the "About this item" bullets, category path and Best Sellers Rank. | $0.006 a call | `GET /v1/amazon/products/get` |
-| [Amazon product reviews](https://okdata.online/apis/amazon/products/reviews/list/) | Customer reviews of an Amazon product: stars, title and text, date, the variant bought, photos, helpful votes and whether the purchase is verified. | $0.006 a call | `GET /v1/amazon/products/reviews/list` |
-| [Amazon Best Sellers](https://okdata.online/apis/amazon/bestsellers/list/) | An Amazon Best Sellers list for a category, in rank order: rank, title, price, rating, number of ratings and photo. Also New Releases, Movers & Shakers, Most Wished For and Gift Ideas. | $0.006 a call | `GET /v1/amazon/bestsellers/list` |
+| [Amazon product search](https://okdata.online/apis/amazon/products/search/?src=gh-amazon-api) | Search an Amazon store by keyword, as a shopper sees the results: title, price and list price, star rating, number of ratings, units bought last month, Prime, Best Seller and Amazon's Choice badges, and the photo. | $0.006 a call | `GET /v1/amazon/products/search` |
+| [Amazon product details](https://okdata.online/apis/amazon/products/get/?src=gh-amazon-api) | One Amazon product by ASIN: title, price and list price, rating and number of ratings, units bought last month, all photos, brand, the "About this item" bullets, category path and Best Sellers Rank. | $0.006 a call | `GET /v1/amazon/products/get` |
+| [Amazon product reviews](https://okdata.online/apis/amazon/products/reviews/list/?src=gh-amazon-api) | Customer reviews of an Amazon product: stars, title and text, date, the variant bought, photos, helpful votes and whether the purchase is verified. | $0.006 a call | `GET /v1/amazon/products/reviews/list` |
+| [Amazon Best Sellers](https://okdata.online/apis/amazon/bestsellers/list/?src=gh-amazon-api) | An Amazon Best Sellers list for a category, in rank order: rank, title, price, rating, number of ratings and photo. Also New Releases, Movers & Shakers, Most Wished For and Gift Ideas. | $0.006 a call | `GET /v1/amazon/bestsellers/list` |
 
 ## Quick start
 
@@ -60,11 +60,11 @@ Then ask in plain words, for example "Amazon product search: portable espresso m
 
 **Do I need a Amazon account?** No. The data is public content, fetched on the server; your own account is never involved.
 
-**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get $0.10 to try; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/ · Billing details: https://okdata.online/docs/billing/
+**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get $0.10 to try; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/?src=gh-amazon-api · Billing details: https://okdata.online/docs/billing/?src=gh-amazon-api
 
 **Can I page through results?** Each page of a list is one call: pass `page.next_cursor` back as `cursor` for the next one. A cursor stays valid for 24 hours.
 
-**What happens when a call fails?** Every error has a fixed `code`, a `message`, and says whether you were charged (`charged`) and whether to retry (`retry`). All error codes: https://okdata.online/docs/errors/
+**What happens when a call fails?** Every error has a fixed `code`, a `message`, and says whether you were charged (`charged`) and whether to retry (`retry`). All error codes: https://okdata.online/docs/errors/?src=gh-amazon-api
 
 ## 中文说明
 
